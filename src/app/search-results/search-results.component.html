@@ -1,0 +1,45 @@
+<div class="page-holder w-100 d-flex flex-wrap">
+    <div class="container-fluid px-xl-5 m50">
+
+        <section>
+            <div class="row mb-4">
+                <div class="col-lg-12 mb-4 mb-lg-0">
+        <div class="card">
+            <div class="card-header">
+              <h2 class="h6 text-uppercase mb-0">Search Results</h2>
+            </div>
+        <table class="table table-striped card-text ">
+
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Order ID</th>
+                <th>Solo Account ID</th>
+                <th>Customer ID</th>
+                <th>Order State</th>
+                <th>Catridge Name</th>
+                <th>Catridge Version</th>
+                <th>Service Type</th>
+              </tr>
+            </thead>
+          
+            <tbody>
+              <tr *ngFor="let result of results">
+                <th scope="row"><input type="checkbox"></th>
+                <td> {{result.orderId}}</td>
+                <td> {{result.soloAccountId}}</td>
+                <td> {{result.customerId}}</td>
+                <td> {{result.orderState}}</td>
+                <td> {{result.catridgeName}}</td>
+                <td> {{result.catridgeVersion}}</td>
+                <td> {{result.serviceType}}</td>
+              </tr>
+            </tbody>
+          </table>
+   
+</div>
+                </div>
+            </div>
+</section>
+    </div>
+</div>
